@@ -1,3 +1,19 @@
 /* @media screen and (max-width: 900px){
-  
+
 } */
+body {
+  background-color: #A1bbd0;
+}
+h1 {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 50px;
+  text-align: center;
+  padding-top: 10px;
+  padding-right: 50px;
+  padding-bottom: 10px;
+  padding-left: 50px;
+  color: #032B2F;
+  background-color: white;
+  border-top: 10px solid #3f4234;
+  border-bottom: 10px solid #3f4234;
+}
