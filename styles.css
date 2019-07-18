@@ -3,6 +3,7 @@
 } */
 body {
   background-color: #A1bbd0;
+
 }
 h1 {
   font-family: 'Titillium Web', sans-serif;
@@ -18,7 +19,17 @@ h1 {
   border-bottom: 10px solid #3f4234;
 }
 
-.newItem{
-  padding-top: 100px;
-
+#all-info {
+  display: flex;
 }
+/* .date {
+  display: flex;
+}
+
+.temperature {
+  display: flex;
+}
+
+.user-imput {
+  display: flex;
+} */
