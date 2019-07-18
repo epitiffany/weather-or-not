@@ -38,3 +38,34 @@ for (var i = 0; i < weather.length; i++) {
   $('.paragraph').append() // appened text to page
   $('.paragraph').text() // change text of paragraph
 }
+
+console.log("click");
+var cardContainer = $('.card-container');
+var submit = $('.submit-btn');
+
+submit.on("click", createNewUser);
+
+$('.card-container').on("click", ".delete-btn", deleteItem);
+
+function appendItem(newItem) {
+    cardContainer.append(`
+    <div class="to-do-card">
+      <p>${newItem}</p> <button class="delete-btn">delete</button>
+    </div>
+  `);
+}
+
+function createNewUser() {
+  var groceryItem = $('.newItem').val();
+  appendItem(groceryItem);
+  clearInputs();
+}
+
+
+function clearInputs() {
+  $('.newItem').val("");
+}
+
+function deleteItem(event){
+  event.target.parentNode.remove();
+}
