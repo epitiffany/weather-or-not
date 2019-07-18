@@ -55,13 +55,6 @@ function addInputBox(){ //function to make input boxes appear (still working on 
   }
 
 
-
-// console.log("click");
-// var cardContainer = $('.card-container');
-// var submit = $('.submit-btn');
-//
-// submit.on("click", createNewUser);
-//
 // $('.card-container').on("click", ".delete-btn", deleteItem);
 //
 // function appendItem(newItem) {
