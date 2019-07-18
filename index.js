@@ -41,19 +41,20 @@
 
 var newDay = ${`.newDayButton`};
 var container = ${`.inputContainer`};
+${`.heading`}.slidedown("slow");
 
 newDay.on("click", addInputBox);
 
 function addInputBox(){ //function to make input boxes appear (still working on it)
-  container.append(
+  container.append(`
+    <div class ="logBox">
     <input type="paragraph" value="How did it feel outside today?" class="feeling">
     <input type="paragraph" value="What'd you wear?" class="clothing">
-
-  )
-
+    </div>
+`);
   }
 
-}
+
 
 console.log("click");
 var cardContainer = $('.card-container');
