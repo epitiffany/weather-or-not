@@ -1,16 +1,60 @@
 var newDay = $('.newDayButton');
 var container = $('.inputContainer');
+var journal = [];
+var right=$('.right');
 
-newDay.on("click", addInputBox);
+var clear=$('.clearButton')
 
-function addInputBox(){ //function to make input boxes appear (still working on it)
-  container.append(`
-    <div class ="log-card">
-    <input type ="date"  placeholder="What day is it?" class="day">
-    <input type="paragraph" placeholder="How did it feel outside today?" class="feeling">
-    <input type="paragraph" placeholder="What'd you wear?" class="clothing">
+clear.on("click",clearAll)
+
+function clearAll (){
+  localStorage.clear();
+  $('.journalCard').remove();
+}
+
+newDay.on("click", getLog);
+
+
+function getLog () {
+    var day = $('.day').val();
+    var feeling = $('.feeling').val();
+    var clothing = $('.clothing').val();
+
+    var log = {
+      day:day,
+      feeling:feeling,
+      clothing:clothing
+    }
+    appendLog(log);
+    saveLog(log);
+}
+
+function appendLog (log) {
+  right.prepend(`
+    <div class="journalCard">
+      <p>Date:${log.day}</p>
+      <p>How did it feel outside? ${log.feeling}</p>
+      <p>What did you wear? ${log.clothing}</p>
     </div>
-`);
-  }
 
-var submitBtn = $('.submitBtn');
+    `)
+}
+
+
+function saveLog (log) {
+  journal.push(log);
+  localStorage.setItem("journal", JSON.stringify(journal));
+}
+
+var storedJournal= JSON.parse(localStorage.getItem("journal"));
+
+for(var i=0; i<storedJournal.length; i++){
+  var log = storedJournal[i]
+  right.append(`
+    <div class="journalCard">
+      <p>Date:${log.day}</p>
+      <p>How did it feel outside? ${log.feeling}</p>
+      <p>What did you wear? ${log.clothing}</p>
+    </div>
+    `)
+}

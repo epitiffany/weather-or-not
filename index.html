@@ -26,12 +26,22 @@
   </script>
 </div>
 
+<div class="container">
 <div class = "log">
   <input type="button" class ="newDayButton" value="New Day">
-  <section class ="inputContainer"></section>
-  <button class="saveBtn">Save</button>
+    <section class ="inputContainer">
+    <div class ="log-card">
+    <input type ="date"  placeholder="What day is it?" class="day">
+    <input type="paragraph" placeholder="How did it feel outside today?" class="feeling">
+    <input type="paragraph" placeholder="What did you wear?" class="clothing">
+    </div>
+    </section>
+    <!-- <button class="saveBtn">Save</button> -->
+  </div>
+<div class="right">
+  <!-- Append here! -->
+  <button class= "clearButton">CLEAR ALL</button>
 </div>
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="index.js"></script>
 

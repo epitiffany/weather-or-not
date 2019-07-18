@@ -3,15 +3,11 @@
 }
 body {
   background-color: #A1bbd0;
-<<<<<<< HEAD
-
-=======
   background-image:url(background.gif);
   background-position: center;
   background-repeat:no-repeat;
   background-size: cover;
   background-height:100%;
->>>>>>> 702c39a2471b1c628f756844b1fc08f31ab9b02a
 }
 h1 {
   font-family: 'Darker Grotesque', sans-serif;
@@ -25,27 +21,12 @@ h1 {
   width:800px;
 }
 
-<<<<<<< HEAD
-#all-info {
-  display: flex;
-}
-/* .date {
-  display: flex;
-}
-
-.temperature {
-  display: flex;
-}
-
-.user-imput {
-  display: flex;
-} */
-=======
 .newDayButton{
     font-family: 'Darker Grotesque', sans-serif;
     font-size:40px;
     border-radius:30px;
     width:300px;
+    margin: auto;
 }
 
 .inputContainer{ /*the big white box on the screen */
@@ -70,10 +51,24 @@ h1 {
 .log{ /*parent of the new day button and the parent of the input boxes*/
   display:flex;
   flex-direction: column;
-  margin:10px;
   align-items: center;
-}
 
+  margin:10px;
+  width: 50%;
+  /* align-items: center; */
+}
+/*
+.right {
+  width: 50%;
+  display:flex;
+  margin:10px;
+  width: 50%;
+  } */
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
 
 .day  {
   font-family:'Darker Grotesque',sans-serif;
@@ -122,5 +117,9 @@ h1 {
     position:absolute;
     right:800px;
   }
+
+.right{
+  padding-left: 20px;
+}
+
 /*    Ending here    */
->>>>>>> 702c39a2471b1c628f756844b1fc08f31ab9b02a
