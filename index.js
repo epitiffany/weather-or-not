@@ -39,15 +39,14 @@
 //   $('.paragraph').text()
 // }
 
-var newDay = ${`.newDayButton`};
-var container = ${`.inputContainer`};
-${`.heading`}.slidedown("slow");
+var newDay = ${'.newDayButton'};
+var container = ${'.inputContainer'};
 
 newDay.on("click", addInputBox);
 
 function addInputBox(){ //function to make input boxes appear (still working on it)
   container.append(`
-    <div class ="logBox">
+    <div class ="log-card">
     <input type="paragraph" value="How did it feel outside today?" class="feeling">
     <input type="paragraph" value="What'd you wear?" class="clothing">
     </div>
@@ -56,33 +55,33 @@ function addInputBox(){ //function to make input boxes appear (still working on 
 
 
 
-console.log("click");
-var cardContainer = $('.card-container');
-var submit = $('.submit-btn');
-
-submit.on("click", createNewUser);
-
-$('.card-container').on("click", ".delete-btn", deleteItem);
-
-function appendItem(newItem) {
-    cardContainer.append(`
-    <div class="to-do-card">
-      <p>${newItem}</p> <button class="delete-btn">delete</button>
-    </div>
-  `);
-}
-
-function createNewUser() {
-  var groceryItem = $('.newItem').val();
-  appendItem(groceryItem);
-  clearInputs();
-}
-
-
-function clearInputs() {
-  $('.newItem').val("");
-}
-
-function deleteItem(event){
-  event.target.parentNode.remove();
-}
+// console.log("click");
+// var cardContainer = $('.card-container');
+// var submit = $('.submit-btn');
+//
+// submit.on("click", createNewUser);
+//
+// $('.card-container').on("click", ".delete-btn", deleteItem);
+//
+// function appendItem(newItem) {
+//     cardContainer.append(`
+//     <div class="to-do-card">
+//       <p>${newItem}</p> <button class="delete-btn">delete</button>
+//     </div>
+//   `);
+// }
+//
+// function createNewUser() {
+//   var groceryItem = $('.newItem').val();
+//   appendItem(groceryItem);
+//   clearInputs();
+// }
+//
+//
+// function clearInputs() {
+//   $('.newItem').val("");
+// }
+//
+// function deleteItem(event){
+//   event.target.parentNode.remove();
+// }

@@ -1,6 +1,6 @@
-/* @media screen and (max-width: 900px){
-
-} */
+@media screen and (max-width: 900px){ /*responsive design*/
+  display:flex;
+}
 body {
   background-color: #A1bbd0;
   background-image:url(background.gif);
@@ -23,7 +23,7 @@ h1 {
 }
 
 .newDayButton{
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Darker Grotesque', sans-serif;
     font-size:40px;
     border-radius:30px;
     width:300px;
@@ -38,6 +38,12 @@ h1 {
   padding: 8px;
 }
 
+.log-card{
+  background:black;
+  width:300px;
+  height:200px;
+}
+
 .log{  /*parent of the new day button and the parent of the input boxes*/
   display:flex;
   flex-direction: column;
@@ -46,17 +52,12 @@ h1 {
 }
 
 .feeling, .clothing{ /*input boxes that i'm still trying to make appear in the white box when button is clicked*/
-  border-color:black;
+  border-color:white;
   border-radius:30px;
   width:80px;
   height:20px;
 }
 
-.logBox{
-  background:black;
-  width:300px;
-  height:200px;
-}
 
 .title{ /*Container of cloud gif and title*/
   display:flex;
