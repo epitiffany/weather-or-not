@@ -3,11 +3,15 @@
 }
 body {
   background-color: #A1bbd0;
+<<<<<<< HEAD
+
+=======
   background-image:url(background.gif);
   background-position: center;
   background-repeat:no-repeat;
   background-size: cover;
   background-height:100%;
+>>>>>>> 702c39a2471b1c628f756844b1fc08f31ab9b02a
 }
 h1 {
   font-family: 'Darker Grotesque', sans-serif;
@@ -21,6 +25,22 @@ h1 {
   width:800px;
 }
 
+<<<<<<< HEAD
+#all-info {
+  display: flex;
+}
+/* .date {
+  display: flex;
+}
+
+.temperature {
+  display: flex;
+}
+
+.user-imput {
+  display: flex;
+} */
+=======
 .newDayButton{
     font-family: 'Darker Grotesque', sans-serif;
     font-size:40px;
@@ -103,3 +123,4 @@ h1 {
     right:800px;
   }
 /*    Ending here    */
+>>>>>>> 702c39a2471b1c628f756844b1fc08f31ab9b02a
