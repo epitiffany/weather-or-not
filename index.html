@@ -4,22 +4,23 @@
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web:600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="javascript" type = "text/javascript" href="index.js">
-    <meta name ="viewport" content="width-device-width, initial-scale =1">
     <title>Weather Or Not</title>
   </head>
   <body>
   <h1>Weather Or Not</h1>
   <p class='condition'></p>
-  <div class='conveyor'></div>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-
 
 <a class="weatherwidget-io" href="https://forecast7.com/en/37d77n122d42/san-francisco/?unit=us" data-label_1="SAN FRANCISCO" data-label_2="WEATHER" data-theme="original" >SAN FRANCISCO WEATHER</a>
 <script>
 !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
 </script>
 
+<div class = "log">
+<input type="button" class ="newDayButton" value="New Day">
+<section class =inputContainer></section>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   </body>
 
 </html>

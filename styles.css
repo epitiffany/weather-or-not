@@ -17,3 +17,32 @@ h1 {
   border-top: 10px solid #3f4234;
   border-bottom: 10px solid #3f4234;
 }
+
+.newDayButton{
+    font-family: 'Titillium Web', sans-serif;
+    font-size:40px;
+    border-radius:30px;
+    width:300px;
+}
+
+.inputContainer{ /*the big white box on the screen */
+  width:500px;
+  height:500px;
+  background: white;
+  border-radius: 30px;
+  margin:10px;
+}
+
+.log{  /*parent of the new day button and the parent of the input boxes*/
+  display:flex;
+  flex-direction: column;
+  margin:10px;
+  align-items: center;
+}
+
+.feeling, .clothing{ /*input boxes that i'm still trying to make appear in the white box when button is clicked*/
+  border-color:black;
+  border-radius:30px;
+  width:80px;
+  height:20px;
+}
