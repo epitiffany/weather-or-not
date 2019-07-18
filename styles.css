@@ -1,24 +1,33 @@
-/* @media screen and (max-width: 900px){
-
-} */
+@media screen and (max-width: 900px){ /*responsive design*/
+  display:flex;
+}
 body {
   background-color: #A1bbd0;
+<<<<<<< HEAD
 
+=======
+  background-image:url(background.gif);
+  background-position: center;
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-height:100%;
+>>>>>>> 702c39a2471b1c628f756844b1fc08f31ab9b02a
 }
 h1 {
-  font-family: 'Titillium Web', sans-serif;
+  font-family: 'Darker Grotesque', sans-serif;
   font-size: 50px;
   text-align: center;
-  padding-top: 10px;
-  padding-right: 50px;
-  padding-bottom: 10px;
-  padding-left: 50px;
+  padding:5px 10px 5px 10px;
   color: #032B2F;
+  margin-top:0px;
   background-color: white;
-  border-top: 10px solid #3f4234;
-  border-bottom: 10px solid #3f4234;
+  border-radius:20px;
+  width:800px;
+  /*border-top: 10px solid #3f4234;
+  border-bottom: 10px solid #3f4234; */
 }
 
+<<<<<<< HEAD
 #all-info {
   display: flex;
 }
@@ -33,3 +42,76 @@ h1 {
 .user-imput {
   display: flex;
 } */
+=======
+.newDayButton{
+    font-family: 'Darker Grotesque', sans-serif;
+    font-size:40px;
+    border-radius:30px;
+    width:300px;
+}
+
+.inputContainer{ /*the big white box on the screen */
+  width:500px;
+  height:500px;
+  background: white;
+  border-radius: 30px;
+  margin:10px;
+  padding: 20px;
+}
+
+.log-card{
+  border:1px solid pink;
+  background:transparent;
+  width:450px;
+  height:250px;
+  display:flex;
+  flex-direction:column;
+  margin:25px;
+}
+
+.log{  /*parent of the new day button and the parent of the input boxes*/
+  display:flex;
+  flex-direction: column;
+  margin:10px;
+  align-items: center;
+}
+
+.day, .feeling, .clothing{ /*input boxes that i'm still trying to make appear in the white box when button is clicked*/
+  font-family:'Darker Grotesque',sans-serif;
+  width:200px;
+  height:100px;
+  margin:25px;
+
+}
+
+
+.title{ /*Container of cloud gif and title*/
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+}
+
+/* These are all the cloud and bird gifs at the top; Starting Here*/
+.birds
+	{
+    position: relative;
+	}
+
+.clouds
+	{
+    position: absolute;
+    top: 20px;
+    right:525px;
+	}
+
+  .blueClouds{
+    position:absolute;
+    right:225px;
+  }
+
+  .pinkClouds{
+    position:absolute;
+    right:800px;
+  }
+/*    Ending here    */
+>>>>>>> 702c39a2471b1c628f756844b1fc08f31ab9b02a

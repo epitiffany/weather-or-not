@@ -1,53 +1,81 @@
-var tempContainer = $('.temp-container');
-var clothesContainer2 = $('.clothes-container2');
-var submit = $('.submit-btn');
+// var weather = [
+//   {
+//     condition: 'sunny',
+//     lowTemp: '70',
+//     highTemp: '76',
+//     date: 'Wednesday July 17th',
+//     day: 'Monday'
+//
+//   },
+//   {
+//     condition: 'cloudy',
+//     lowTemp: '67',
+//     highTemp: '76',
+//     date: 'Thursday July 18th',
+//     day: 'Tuesday'
+//   }
+// ]
+//
+// var dayOne = {
+//   condition: 'sunny',
+//   lowTemp: '70',
+//   highTemp: '76',
+//   date: 'Wednesday July 17th',
+//   day: 'Monday'
+// }
+//
+// var dayTwo = {
+//   condition: 'cloudy',
+//   lowTemp: '67',
+//   highTemp: '76',
+//   date: 'Thursday July 18th',
+//   day: 'Tuesday'
+// }
+//
+// for (var i = 0; i < weather.length; i++) {
+//   var condition = weather[i].condition
+//   var lowTemp = weather[i].lowTemp
+//   $('.paragraph').append()
+//   $('.paragraph').text()
+// }
 
-submit.on("click", grabItems);
+var newDay = $('.newDayButton');
+var container = $('.inputContainer');
 
-$('.clothes-container2').on("click", ".delete-btn", deleteItem);
+newDay.on("click", addInputBox);
 
-function grabItems() {
-  var clothing = $('.newItem').val();
-  var temp=$('.newTemp').val();
-  appendItems(clothing, temp);
-  clearInput();
-}
-
-function appendItems(newItem, newTemp) {
-    clothesContainer2.append(`
-    <div class="clothes-card">
-      <p>${newItem}</p> <button class="delete-btn">delete</button>
+function addInputBox(){ //function to make input boxes appear (still working on it)
+  container.append(`
+    <div class ="log-card">
+    <input type ="text"  placeholder="What day is it?" class="day">
+    <input type="paragraph" placeholder="How did it feel outside today?" class="feeling">
+    <input type="paragraph" placeholder="What'd you wear?" class="clothing">
     </div>
-  `);
-}
-
-function clearClothesInput() {
-  $('.newItem').val("");
-}
-
-function deleteItem(event){
-  event.target.parentNode.remove();
-}
+`);
+  }
 
 
-tempSubmit.on("click", grabTemp);
-
-$('.temp-container').on("click", ".delete-btn", deleteItem);
-
-function grabTemp() {
-  var temp = $('.newTemp').val();
-  appendTemp(temp);
-  clearTempInput();
-}
-
-function appendTemp(newItem) {
-    tempContainer.append(`
-    <div class="temp-card">
-      <p>${newItem}</p> <button class="delete-btn">delete</button>
-    </div>
-  `);
-}
-
-function clearTempInput() {
-  $('.newItem').val("");
-}
+// $('.card-container').on("click", ".delete-btn", deleteItem);
+//
+// function appendItem(newItem) {
+//     cardContainer.append(`
+//     <div class="to-do-card">
+//       <p>${newItem}</p> <button class="delete-btn">delete</button>
+//     </div>
+//   `);
+// }
+//
+// function createNewUser() {
+//   var groceryItem = $('.newItem').val();
+//   appendItem(groceryItem);
+//   clearInputs();
+// }
+//
+//
+// function clearInputs() {
+//   $('.newItem').val("");
+// }
+//
+// function deleteItem(event){
+//   event.target.parentNode.remove();
+// }
