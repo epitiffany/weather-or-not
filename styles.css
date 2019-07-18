@@ -19,8 +19,6 @@ h1 {
   background-color: white;
   border-radius:20px;
   width:800px;
-  /*border-top: 10px solid #3f4234;
-  border-bottom: 10px solid #3f4234; */
 }
 
 .newDayButton{
@@ -43,25 +41,36 @@ h1 {
   border:1px solid pink;
   background:transparent;
   width:450px;
-  height:250px;
+  height:450px;
   display:flex;
   flex-direction:column;
   margin:25px;
 }
 
-.log{  /*parent of the new day button and the parent of the input boxes*/
+.log{ /*parent of the new day button and the parent of the input boxes*/
   display:flex;
   flex-direction: column;
   margin:10px;
   align-items: center;
 }
 
-.day, .feeling, .clothing{ /*input boxes that i'm still trying to make appear in the white box when button is clicked*/
+
+.day  {
   font-family:'Darker Grotesque',sans-serif;
-  width:200px;
+  font-size: 18px;
+  width:400px;
   height:100px;
   margin:25px;
+  text-align: center;
+}
 
+.feeling, .clothing{ /*input boxes that i'm still trying to make appear in the white box when button is clicked*/
+  font-family:'Darker Grotesque',sans-serif;
+  font-size: 20px;
+  width:400px;
+  height:300px;
+  margin:25px;
+  text-align: center;
 }
 
 
