@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
+
   <head>
+    <link href="https://fonts.googleapis.com/css?family=Darker+Grotesque&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web:600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="javascript" type = "text/javascript" href="index.js">
@@ -10,18 +12,16 @@
   <body>
 
   <header class="title">
-   <section style="position: relative; left: 100; top: 100;">
     <img src="birds.gif" class="birds" alt="bird gif">
+    <img src="pink.gif" class="pinkClouds" alt="pink clouds">
     <img src="cloud.gif" class="clouds" alt="clouds and sun">
-  </section>
+    <img src="blue.gif" class="blueClouds" alt="blue clouds">
+
     <h1 class="heading">Weather Or Not</h1>
   </header>
 
 <div class= weather-widget>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-
   <a class="weatherwidget-io" href="https://forecast7.com/en/37d77n122d42/san-francisco/?unit=us" data-label_1="SAN FRANCISCO" data-label_2="WEATHER" data-theme="original" >SAN FRANCISCO WEATHER</a>
-
   <script>
     !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
   </script>
