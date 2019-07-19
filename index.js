@@ -52,9 +52,10 @@ for(var i=0; i<storedJournal.length; i++){
   var log = storedJournal[i]
   right.append(`
     <div class="journalCard">
-      <p>Date:${log.day}</p>
-      <p>How did it feel outside? ${log.feeling}</p>
-      <p>What did you wear? ${log.clothing}</p>
+      <p>'Date:      ${log.day}''</p>
+      <p>'How did it feel outside?    ${log.feeling}'</p>
+      <p>'What did you wear?     ${log.clothing}''</p>
     </div>
+
     `)
 }

@@ -36,34 +36,28 @@ h1 {
   border-radius: 30px;
   margin:10px;
   padding: 20px;
+  background-color:#d5e6eb;
+  opacity:0.6;
 }
 
 .log-card{
-  border:1px solid pink;
-  background:transparent;
   width:450px;
   height:450px;
   display:flex;
   flex-direction:column;
   margin:25px;
+  background: #dbd5eb;
+  border:1px solid black;
+
 }
 
 .log{ /*parent of the new day button and the parent of the input boxes*/
   display:flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction:row;
+  margin:10px;
 
-  margin:10px;
-  width: 50%;
-  /* align-items: center; */
 }
-/*
-.right {
-  width: 50%;
-  display:flex;
-  margin:10px;
-  width: 50%;
-  } */
+
 
 .container {
   display: flex;
@@ -79,13 +73,17 @@ h1 {
   text-align: center;
 }
 
-.feeling, .clothing{ /*input boxes that i'm still trying to make appear in the white box when button is clicked*/
-  font-family:'Darker Grotesque',sans-serif;
+.feeling, .clothing{
   font-size: 20px;
   width:400px;
-  height:300px;
+  height:250px;
   margin:25px;
   text-align: center;
+}
+
+.day, .feeling, .clothing{
+    background: #d3cce8;
+    border-color:#d3cce8;
 }
 
 
@@ -119,7 +117,49 @@ h1 {
   }
 
 .right{
-  padding-left: 20px;
+  padding: 20px;
+  font-size: 18px;
+  width:700px;
+  height:500px;
+  margin:25px;
+  font-family:'Darker Grotesque', sans-serif;
+  background:#e6c8d6;
+  border-radius:30px;
+  position:relative;
+  top:45px;
+  left:65px;
+  opacity:0.6;
+}
+
+.buttonAndInputs{
+  display:flex;
+  flex-direction:column;
 }
 
 /*    Ending here    */
+
+.clearButton{
+  margin-top:30px;
+  height:30px;
+  font-family: 'Darker Grotesque', sans-serif;
+  border-radius:30px;
+}
+
+.journalCard{
+  border:1px solid black;
+  padding:20px;
+  margin:10px;
+  background:#c8d7e6;
+}
+
+.inputContainer:hover{
+  opacity:1.0;
+}
+
+.right:hover{
+  opacity:1.0;
+}
+
+.weatherwidget-io{
+  border-radius:30px;
+}
